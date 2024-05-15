@@ -1,6 +1,11 @@
+/*nav section*/
 
 ul {
     list-style-type: none;
+}
+
+.navbar {
+    background-color: #FFFAFA;
 }
 
 .desktop.navbar {
@@ -15,9 +20,40 @@ ul {
 .desktop.navlogo {
     display: flex;
     flex-flow: row wrap;
+    margin-left: 24px;
+    max-height: 32px;
+}
+
+.desktop.navlogo p {
+    opacity: 0.75;
 }
 
 .desktop.navbuttons ul {
     display: flex;
     flex-flow: row wrap;  
+    margin-right: 24px;
 }
+
+.desktop.navbuttons li {
+    margin: 0 8px;
+}
+
+.mobile.navbar {
+    display: none;
+    height: 64px;
+}
+
+@media only screen and (max-width: 480px) {
+    .desktop.navbar {
+        display: none;
+        
+    }
+    .mobile.navbar {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: space-around;
+    }
+}
+
+/*banner section*/
