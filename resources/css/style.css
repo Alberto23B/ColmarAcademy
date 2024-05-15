@@ -1,0 +1,23 @@
+
+ul {
+    list-style-type: none;
+}
+
+.desktop.navbar {
+    position: fixed;
+    max-height: 64px;
+    min-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.desktop.navlogo {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.desktop.navbuttons ul {
+    display: flex;
+    flex-flow: row wrap;  
+}
