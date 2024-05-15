@@ -1,3 +1,17 @@
+/*all*/
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+li {
+    display: inline-flex;
+}
 /*nav section*/
 
 ul {
@@ -6,15 +20,18 @@ ul {
 
 .navbar {
     background-color: #FFFAFA;
+    z-index: 100;
 }
 
 .desktop.navbar {
     position: fixed;
-    max-height: 64px;
+    top: 0;
+    height: 64px;
     min-width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-content: center;
 }
 
 .desktop.navlogo {
@@ -28,7 +45,7 @@ ul {
     opacity: 0.75;
 }
 
-.desktop.navbuttons ul {
+.desktop.navbuttons {
     display: flex;
     flex-flow: row wrap;  
     margin-right: 24px;
@@ -57,3 +74,41 @@ ul {
 }
 
 /*banner section*/
+header.desktop {
+    position: relative;
+    top: 64px;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    overflow: hidden;
+    background-color: #C9C9C9;
+}
+
+.desktop .imgbox {
+    margin: 32px 24px;
+    height: auto;
+    width: 60%;
+}
+
+.desktop .textbox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    margin: 24px;
+}
+
+#startbtn {
+    width: 100%;
+    margin: 1rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #FFFAFA;
+    background-color: #4B4B4B;
+}
+
+
+
