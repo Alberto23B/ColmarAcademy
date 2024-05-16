@@ -1,7 +1,6 @@
 /*all*/
 html {
-    font-family: "Bebas Neue", sans-serif;
-    font-size: large;
+    font-family: "Helvetica", sans-serif;
 }
 
 img {
@@ -149,7 +148,7 @@ main {
     margin: 32px 24px;
     display: flex;
     flex-flow: row nowrap;
-    width: 100%;
+    max-width: 100%;
 }
 
 main.mobile {
@@ -167,6 +166,7 @@ main .leftcont {
 }
 
 main .rightcont {
+    height: auto;
     width: 40%;
     display: flex;
     flex-flow: column wrap;
@@ -228,4 +228,48 @@ main p {
    main p, main h3, main a {
         margin: 0 16px;
    }
+}
+
+/*start learning section*/
+
+.desktop.learn {
+    position: relative;
+    top: 64px;
+    text-align: center;
+    width: 100%;
+    background-color: #C9C9C9;
+}
+
+.title {
+    display: flex;
+}
+
+.title h1 {
+    margin: 32px auto;
+}
+
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.crsbox {
+    background-color: #FFFAFA;
+    margin: 16px;
+    width: 25%;
+    text-align: left;
+}
+
+.crsbox img {
+    height: auto;
+    max-width: 100%;
+}
+
+.crsbox h3, .crsbox p {
+    margin-left: 16px;
+}
+
+.crsbox h6 {
+    margin: 8px 16px;
 }
