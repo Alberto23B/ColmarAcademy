@@ -74,7 +74,7 @@ ul {
 }
 
 /*banner section*/
-header.desktop {
+header {
     position: relative;
     top: 64px;
     display: flex;
@@ -84,13 +84,13 @@ header.desktop {
     background-color: #C9C9C9;
 }
 
-.desktop .imgbox {
+header .imgbox {
     margin: 32px 24px;
     height: auto;
     width: 60%;
 }
 
-.desktop .textbox {
+header .textbox {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -103,12 +103,45 @@ header.desktop {
     width: 100%;
     margin: 1rem;
     display: flex;
+    flex-wrap: wrap;
     align-self: center;
     justify-content: center;
     text-decoration: none;
     color: #FFFAFA;
     background-color: #4B4B4B;
 }
+
+@media only screen and (max-width: 480px) {
+    header {
+        top: 0;
+        flex-flow: column nowrap;    
+}
+    .textbox h1 {
+        margin: 32px 16px;
+    }
+    
+    .textbox h3 {
+        margin: 0 16px;
+    }
+
+    header .imgbox {
+        margin: 0;
+        width: 100%;
+}
+    header .textbox {
+        width: 100%;
+        margin: 0;
+}
+    #startbtn {
+        width: 90%;
+        height: 64px;
+        margin: 24px 16px 32px 16px;
+        align-content: center;
+    }
+
+}
+
+
 
 
 
