@@ -65,6 +65,9 @@ ul {
         
     }
     .mobile.navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         align-content: center;
@@ -112,7 +115,7 @@ header .textbox {
 
 @media only screen and (max-width: 480px) {
     header {
-        top: 0;
+        top: 64px;
         flex-flow: column nowrap;    
 }
     .textbox h1 {
@@ -209,10 +212,11 @@ main p {
     }
 
     main.mobile {
+        position: relative;
+        top: 64px;
         display: flex;
         flex-flow: column;
-        top: 0;
-        margin: 16px 0;
+        margin: 16px 0 32px;
     }
 
     .maincnt {
@@ -256,8 +260,9 @@ main p {
 
 .crsbox {
     background-color: #FFFAFA;
-    margin: 16px;
-    width: 25%;
+    margin: 0 16px 16px;
+    overflow: auto;
+    max-width: 25%;
     text-align: left;
 }
 
@@ -273,3 +278,42 @@ main p {
 .crsbox h6 {
     margin: 8px 16px;
 }
+
+.mobile.learn {
+    position: relative;
+    top: 64px;
+    border-top: #C9C9C9 solid 1px;
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .desktop.learn {
+        display: none;
+    }
+
+    .mobile.learn {
+        display: flex;
+        flex-flow: column nowrap;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .lrntitle {
+        margin: 16px auto;
+    }
+
+    .mobile.crsbox {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        max-width: 100%;
+
+    }
+
+    .mobile.crsbox div {
+        display: inline-flex;
+        background-color: #C9C9C9;
+        margin: 0 0 8px;
+    }
+}
+
