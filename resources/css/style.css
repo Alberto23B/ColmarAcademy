@@ -310,10 +310,13 @@ main p {
 
     }
 
-    .mobile.crsbox div {
+    .mobile.crsbox a {
         display: inline-flex;
         background-color: #C9C9C9;
         margin: 0 0 8px;
+        text-decoration: none;
+        color: #4B4B4B;
     }
+    
 }
 
