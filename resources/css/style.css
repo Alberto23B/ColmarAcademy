@@ -141,7 +141,91 @@ header .textbox {
 
 }
 
+/*main section*/
 
+main {
+    position: relative;
+    top: 64px;
+    margin: 32px 24px;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
 
+main.mobile {
+    display: none;
+}
 
+main .imgbox {
+    height: auto;
+    width: 100%;
+}
 
+main .leftcont {
+    width: 60%;
+    margin-right: 24px; 
+}
+
+main .rightcont {
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main h1 {
+    border-top: 32px;
+    border-bottom: 24px;
+}
+
+main p {
+    margin: 32px 0;
+}
+
+.maincnt {
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    border: #C9C9C9 solid 1px;
+    border-top: none;
+}
+
+.maincnt img {
+    height: auto;
+    max-width: 35%;
+    margin: 16px;
+}
+
+#hlight1 img {
+    margin-top: 0; 
+}
+
+#hlight2 {
+    background-color: #C9C9C9;
+}
+
+@media only screen and (max-width: 480px) {
+    main.desktop {
+        display: none;
+    }
+
+    main.mobile {
+        display: flex;
+        flex-flow: column;
+        top: 0;
+        margin: 16px 0;
+    }
+
+    .maincnt {
+        display: flex;
+        flex-flow: column nowrap;
+        border: none;
+    }
+
+    .maincnt img {
+        max-width: 100%;
+    }
+
+   main p, main h3, main a {
+        margin: 0 16px;
+   }
+}
