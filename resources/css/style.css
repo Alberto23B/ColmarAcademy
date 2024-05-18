@@ -3,9 +3,17 @@ html {
     font-family: "Helvetica", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 img {
     height: auto;
     max-width: 100%;
+}
+
+p {
+    line-height: 1.5;
 }
 
 li {
@@ -89,24 +97,25 @@ header {
 header .imgbox {
     margin: 32px 24px;
     height: auto;
-    width: 60%;
+    max-width: 60%;
 }
 
 header .textbox {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    flex-direction: column;
-    width: 30%;
+    max-width: 40%;
+    flex-flow: column wrap;
     margin: 24px;
+    padding-right: 48px;
 }
 
 #startbtn {
-    width: 100%;
-    margin: 1rem;
+    width: 80%;
+    margin: 1rem 0;
     display: flex;
     flex-wrap: wrap;
-    align-self: center;
+    align-self: flex-start;
     justify-content: center;
     text-decoration: none;
     color: #FFFAFA;
@@ -266,6 +275,10 @@ main p {
     text-align: left;
 }
 
+.crsbox a {
+    color: black;
+}
+
 .crsbox img {
     height: auto;
     max-width: 100%;
@@ -314,7 +327,6 @@ main p {
         display: inline-flex;
         background-color: #C9C9C9;
         margin: 0 0 8px;
-        text-decoration: none;
         color: #4B4B4B;
     }
     
