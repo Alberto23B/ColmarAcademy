@@ -12,6 +12,11 @@ img {
     max-width: 100%;
 }
 
+video {
+    height: auto;
+    max-width: 100%;
+}
+
 p {
     line-height: 1.5;
 }
@@ -255,6 +260,7 @@ main p {
 
 .title {
     display: flex;
+    width: 100%
 }
 
 .title h1 {
@@ -332,3 +338,46 @@ main p {
     
 }
 
+/*thesis section*/
+
+.desktop.thesis {
+    position: relative;
+    top: 64px;
+    margin: 32px 24px;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 100%;
+}
+
+.thesis .leftcont {
+    width: 60%;
+}
+
+.thesis .rightcont {
+    height: auto;
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.thesis h1 {
+    border-top: 32px;
+    border-bottom: 24px;
+}
+
+.thesis p {
+    margin: 24px 0 32px 0
+}
+
+.thesis .maincnt {
+    overflow: hidden;
+    display: flex;
+    border: #C9C9C9 solid 1px;
+    border-top: none;
+}
+
+.vidbox {
+    height: auto;
+    max-width: 100%;
+    margin-right: 24px;
+}
