@@ -24,6 +24,12 @@ p {
 li {
     display: inline-flex;
 }
+
+@media only screen and (max-width: 480px) {
+    body {
+        margin: 0;
+    }
+}
 /*nav section*/
 
 ul {
@@ -130,7 +136,8 @@ header .textbox {
 @media only screen and (max-width: 480px) {
     header {
         top: 64px;
-        flex-flow: column nowrap;    
+        display: flex;
+        flex-flow: column nowrap;  
 }
     .textbox h1 {
         margin: 32px 16px;
@@ -142,17 +149,19 @@ header .textbox {
 
     header .imgbox {
         margin: 0;
-        width: 100%;
+        max-width: 100%;
 }
     header .textbox {
-        width: 100%;
+        max-width: 100%;
         margin: 0;
+        padding-right: 0;
 }
     #startbtn {
-        width: 90%;
+        width: 92%;
         height: 64px;
-        margin: 24px 16px 32px 16px;
+        margin: 24px 16px 32px;
         align-content: center;
+        align-self: center;
     }
 
 }
@@ -212,11 +221,7 @@ main p {
     margin: 16px;
 }
 
-#hlight1 img {
-    margin-top: 0; 
-}
-
-#hlight2 {
+#hlight {
     background-color: #C9C9C9;
 }
 
@@ -343,7 +348,7 @@ main p {
 .desktop.thesis {
     position: relative;
     top: 64px;
-    margin: 32px 24px;
+    margin: 0 24px;
     display: flex;
     flex-flow: row wrap;
     max-width: 100%;
@@ -365,6 +370,10 @@ main p {
     border-bottom: 24px;
 }
 
+.thesis a {
+    color: #000
+}
+
 .thesis p {
     margin: 24px 0 32px 0
 }
@@ -372,6 +381,7 @@ main p {
 .thesis .maincnt {
     overflow: hidden;
     display: flex;
+    align-items: center;
     border: #C9C9C9 solid 1px;
     border-top: none;
 }
@@ -380,4 +390,27 @@ main p {
     height: auto;
     max-width: 100%;
     margin-right: 24px;
+}
+
+#hlight2 {
+    background-color: #C9C9C9;
+}
+
+@media only screen and (max-width: 480px) {
+    .thesis .rightcont,
+    .thesis .textbox {
+        display: none;
+    }
+
+    .thesis .leftcont {
+        width: 100%;
+    }
+
+    .desktop.thesis {
+        margin: 0;
+    }
+
+    .vidbox {
+        margin-right: 0;
+    }
 }
